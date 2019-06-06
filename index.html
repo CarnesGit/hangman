@@ -6,24 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hangman</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-    <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="js.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="assets/Javascript/game.js"></script>
 </head>
 
 <body>
-    <!-- jumbotron Welcome -->
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to Hangman!</h1>
-        <p class="lead jumboP">This is a classic game has helped me further my knowledge of Bootstrap and Javascript.</p>
-        <hr class="my-4">
-        <p class="jumboP"> It uses utility classes for typography and spacing to space content out within the larger container.</p>
-        <div id="jumbobtn"><button type="button" class="btn btn-success">Start Game</button></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <img class="noose" src="assets/Images/noose.png" alt="noose">
+            </div>
+            <div class="col-lg-8">
+                <h1 id="banner">HangMan</h1>
+                <h2 id="startGame">Press any key to start the Game!</h2>
+                <button type="button" class="btn btn-danger" id="resetbtn">Reset Game</button>
+            </div>
+            <div class="col-lg-2">
+                <img class="noose" src="assets/Images/noose.png" alt="noose">
+            </div>
+            <div id="gameBoard" class="row">
+                <div class="col-lg-4">
+                    <img id="gameBoardPic" src="assets/Images/10.jpg" alt="Hangman Gameboard">
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div id="blankGuess">
+                            <p>The empty spaces for letters will display here</p>
+                        </div>
+                        <h2>Correct Guesses</h2>
+                    </div>
+                    <div class="row">
+                        <div id="wrongGuess">
+                            <p>Your incorrect guesses will display here</p>
+                        </div>
+                        <h2>Incorrect Guesses</h2>
+                    </div>
+                    <div class="row">
+                        <div id="guessesLeft">
+                            <p>Number of Guesses left will display here</p>
+                        </div>
+                        <h2>Guesses Left</h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
-
-
 </body>
-
-</html>
