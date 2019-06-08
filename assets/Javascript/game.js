@@ -49,11 +49,13 @@ function start(event) {
     //if guesses left is zero you lose
     if (guessesLeft === 0) {
         losses++;
+        alert('Sorry you Lose. Try again!')
         reset();
         //display win or lose message
     } else if (blankSpaces.indexOf("_ ") === -1) {
         //you win banner
         wins++;
+        alert('You Win! See if you can beat your Highest Score!');
         reset();
     }
     console.log("guesses left:" + guessesLeft);
