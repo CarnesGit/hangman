@@ -64,6 +64,31 @@ function start(event) {
     document.getElementById('remainingGuesses').textContent = guessesLeft;
     document.getElementById('winsBox').textContent = wins;
     document.getElementById('lossesBox').textContent = losses;
+
+
+    if (guessesLeft === 10) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/0.jpg';
+    } else if (guessesLeft === 9) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/1.jpg';
+    } else if (guessesLeft === 8) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/2.jpg';
+    } else if (guessesLeft === 7) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/3.jpg';
+    } else if (guessesLeft === 6) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/4.jpg';
+    } else if (guessesLeft === 5) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/5.jpg';
+    } else if (guessesLeft === 4) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/6.jpg';
+    } else if (guessesLeft === 3) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/7.jpg';
+    } else if (guessesLeft === 2) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/8.jpg';
+    } else if (guessesLeft === 1) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/9.jpg';
+    } else if (guessesLeft === 0) {
+        document.getElementById("gameBoardPic").src = '../assets/Images/10.jpg';
+    }
 }
 
 function reset() {
